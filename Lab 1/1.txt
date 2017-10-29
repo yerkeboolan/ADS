@@ -1,2 +1,5 @@
-As it was said in the condition of the problem, our tree is connected undirected graph with no CYCLES. Subsequently, we can consider, that when we create the first vertex of our tree, it doesn't have any edges. Because, there aren't new or other vertex. When we will add new vertex, in hence, is created new one edge.
+As it was said in the condition of the problem, our tree is connected undirected graph with no CYCLES. 
+Subsequently, we can consider, that when we create the first vertex of our tree, it doesn't have any edges. 
+Because, there aren't new or other vertex. 
+When we will add new vertex, in hence, is created new one edge.
 In a result, any vertex can have one edge. With no cycles, we get N vertexes and N - 1 edges.
