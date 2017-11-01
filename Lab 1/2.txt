@@ -1,0 +1,7 @@
+If undirected graph has N vertices, so we know it's minimum amount of edges equals to N - 1.
+Hence, it is simple tree. If amount of edges equals to N - 2, components of graph is disconnected. 
+For instance, 		here we see, that graph not connected.
+	   0           0
+		\
+		0
+As a resutl, I can say, that graph is disconnected, when it's amount of edges less than N - 1.

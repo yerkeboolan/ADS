@@ -1,0 +1,4 @@
+Algorithm will be so: 
+	Obviously, we will used depth-first search algorithm with vector. Firstly, we should find all the possible ways from vertex to another vertex.
+	When we will launch the program, DFS function will check all vertices, which is used. During the checking, we through the vector write values to path.
+	After all checkings, path will consist all vertices. So, we will find any path between two edges.
