@@ -4,8 +4,7 @@
 	using namespace std;
 
 	int main() {
-		int sz;
-		cin >> sz;
+			
  		int a[sz][sz];
 		int d[sz];
 		int v[sz];
