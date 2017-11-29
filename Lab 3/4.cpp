@@ -3,12 +3,12 @@
      
 using namespace std;
     
-int n, s, b;
+int n, s, f;
 int a[111][111];
 int d[111], used[111], p[111];
 const int inf = 1000000000;
 int main() {  
-    cin >> n >> s >> b;
+    cin >> n >> s >> f;
     for(int i = 1; i <= n; i++) d[i] = inf;
     d[s] = 0;
     for(int i = 1; i <= n; i++)
@@ -30,18 +30,18 @@ int main() {
     }
     vector<int> ans;
  
-    if(d[b] == inf){
+    if(d[f] == inf){
         cout << -1 << endl;
         return 0;
     }
  
-    int u = b;
+    int u = f;
     while(u != s){
         ans.push_back(u);
         u = p[u];
     }
     reverse(ans.begin(), ans.end());
-    cout << s << " ";
+   	cout << s << " ";
     for(int i = 0; i < ans.size(); ++i)
         cout << ans[i] << " ";
     return 0;

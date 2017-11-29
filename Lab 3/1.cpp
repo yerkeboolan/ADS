@@ -1,24 +1,29 @@
 #include <iostream>
 #include <vector>
-#include <map>
      
 using namespace std;
     
 int n, m;
 int used[10000];
 vector<int> p[10000];
-int cnt, components, cut_points;
-map<int, int> zapret;
-	 void dfs(int v){
+int cnt, components, cut_points;     
+
+
+
+int zapret[10000];
+void dfs(int v){
 		used[v] = 1;
 		for(int i = 0; i < p[v].size(); i++){
-		int pt = p[v][i];
-		if(!used[pt] && zapret[pt] != 1)
-			 dfs(pt);
-	}
+			int pt = p[v][i];
+			if(!used[pt] && zapret[pt] != 1)
+	 		 dfs(pt);
+		}
 }
-	vector<int> ans;
-	int main(){  
+vector<int> ans;
+
+
+
+int main(){  
     cin >> n >> m;
     for(int i = 0, u, v; i < m; i++){
         cin >> u >> v;
@@ -30,6 +35,7 @@ map<int, int> zapret;
         	dfs(i);
         	components++;
         }
+
     for(int i = 1; i <= n; i++){
     	zapret[i] = 1;
     	for(int j = 1; j <= n; j++) used[j] = 0;
